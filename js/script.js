@@ -26,7 +26,7 @@ function showSlides(n) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " active";
 }
 
 
@@ -56,3 +56,5 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft= "0";
 }
+
+// modal 

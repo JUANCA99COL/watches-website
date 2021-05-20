@@ -6,27 +6,41 @@
      <!-- fontawesome  -->
      <script src="https://kit.fontawesome.com/65fddabedd.js" crossorigin="anonymous"></script>
      <!-- bootstrap -->
-     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
      <link rel="stylesheet" href="css/style.css">
     <title>Contact</title>
 </head>
 <body>
-    <nav class="row clearfix nav">
-      <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="shipping.html">Shipping</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-        <li>
-          <a href="index.html"><img class="logo" src="img/watch-logo.png" alt=""></a>
-        </li>
-      </ul>
+
+      <nav class="nav">
+        <ul>
+           <li class="nav-items">
+              <a href="index.html">Home</a>
+          </li>
+           <li class="nav-items">
+            <a href="shipping.html">Products</a>
+          </li>
+           <li class="nav-items">
+              <a href="contact.html">Contact</a>
+           </li>
+           <li>
+            <!-- <a href=""><i class="menu" onclick="openNav()">&#9776;</i></a> -->
+            <span class="menu" onclick="openNav()">&#9776;</span>
+            <!-- style="font-size:30px;cursor:pointer" -->
+          </li>
+           <li>
+             <a href="index.html"><img class="logo" src="img/watch-logo.png" alt=""></a>
+           </li>
+        </ul>
     </nav>
+  
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
     <!-- banner image  -->
     <section id="section1">  
@@ -52,7 +66,7 @@
         <h1 class="text-center">LEAVE US A MESSAGE</h1>
     </div>
 
-    <form id="section-2" class="myForm p-5">
+    <form id="section-2" class="myForm p-5" action=”mailto:jcamilocarorodriguez@gmail.com”method=”POST” enctype=”multipart/form-data”name=”EmailForm”>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">First Name</label>
           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -79,6 +93,10 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+
+
+
+
 
        <!-- footer -->
   
@@ -109,5 +127,6 @@
       </div>
 
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,43 +6,190 @@
      <!-- fontawesome  -->
      <script src="https://kit.fontawesome.com/65fddabedd.js" crossorigin="anonymous"></script>
      <!-- bootstrap -->
-     <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+     <!-- <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
      <link rel="stylesheet" href="css/style.css">
     <title>Shipping</title>
 </head>
 <body>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="img/rolex-video.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
+
+
+
+          <nav class="nav">
+            <ul>
+              <li class="nav-items">
+                  <a href="index.html">Home</a>
+              </li>
+              <li class="nav-items">
+                <a href="shipping.html">Products</a>
+              </li>
+              <li class="nav-items">
+                  <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <!-- <a href=""><i class="menu" onclick="openNav()">&#9776;</i></a> -->
+                <span class="menu" onclick="openNav()">&#9776;</span>
+                <!-- style="font-size:30px;cursor:pointer" -->
+              </li>
+              <li>
+                <a href="index.html"><img class="logo" src="img/watch-logo.png" alt=""></a>
+              </li>
+            </ul>
+        </nav>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="shipping.html">Shipping</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- <div class="container">
+          <img src="img/watch-product.jpg" alt="Notebook" style="width:100%;">
+          <div class="content">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+          </div>
+        </div> -->
+
+
+     
+
+   
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Check out form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+
+
+
+                <!-- check out form  -->
+
+                <div class="row">
+                  <div class="col-75">
+                    <div class="container">
+                      <form action="/action_page.php">
+                
+                        <div class="row">
+                          <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+                
+                            <div class="row">
+                              <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="NY">
+                              </div>
+                              <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="col-50">
+                            <h3>Payment</h3>
+                            <label for="fname">Accepted Cards</label>
+                            <div class="icon-container">
+                              <i class="fa fa-cc-visa" style="color:navy;"></i>
+                              <i class="fa fa-cc-amex" style="color:blue;"></i>
+                              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                              <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                
+                            <div class="row">
+                              <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                              </div>
+                              <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                              </div>
+                            </div>
+                          </div>
+                
+                        </div>
+                        <label>
+                          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                      </form>
+                    </div>
+                  </div>
+                
+                  <div class="col-25">
+                    <div class="container">
+                      <h4>Cart
+                        <span class="price" style="color:black">
+                          <i class="fa fa-shopping-cart"></i>
+                          <b>4</b>
+                        </span>
+                      </h4>
+                      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                      <hr>
+                      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--end check out form  -->
+
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- video  -->
+
+        <video autoplay muted loop id="myVideo">
+          <source src="img/rolex-video.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video> 
+
+
+
+  
       
       <div class="content text-center">
         <h1>Shipping</h1>
         <p class="mb-3">Get a shipping quote with UPS today. From small one-off packages to large shipments, explore our variety of delivery services and find the best one for you.</p>
-        <a href="https://www.surfstitch.com/nz/mens/accessories/watches?gclsrc=aw.ds&gclid=CjwKCAjwy42FBhB2EiwAJY0yQu59CP04b8Tf48OH5ypFMikJbiGez1OqfME3n5EB594MWFmnFn7H1BoCNoAQAvD_BwE">
-            <button type="button" class="btn btn-primary d-block m-auto myButtons" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-               order now
-            </button>
-         </a>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            CHECK OUT
+          </button>
       </div>
 
-      <nav class="nav">
-        <ul>
-          <li>
-              <a href="index.html">Home</a>
-          </li>
-          <li>
-              <a href="shipping.html">Shipping</a>
-          </li>
-          <li>
-              <a href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="index.html"><img class="logo" src="img/watch-logo.png" alt=""></a>
-          </li>
-        </ul>
-      </nav>
 
   
 
@@ -50,5 +197,38 @@
     <script src="js/script.js">
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- <div class="post-content-wrapper">
+  <div class="flex flex4">
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+    <div class="child flex4-child">
+      <img class="grid-img img-thumbnail" src="img/watch-product.jpg" alt="">
+    </div>
+  </div>  
+</div> -->
