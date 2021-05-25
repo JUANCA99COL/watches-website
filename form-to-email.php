@@ -13,12 +13,12 @@
 
 	$email_body = "You have received a new message from the user $name.\n".
                             "Here is the message:\n $message".
-?>
 
 
-<!-- send the email  -->
 
-<?php
+// <!-- send the email  -->
+
+
 
   $to = "jcamilocarorodriguez@gmail.com";
 
@@ -28,12 +28,12 @@
 
   mail($to,$email_subject,$email_body,$headers);
 
- ?>
 
 
-<!-- securing from global injection  -->
 
-<?php
+// <!-- securing from global injection  -->
+
+
 function IsInjected($str)
 {
     $injections = array('(\n+)',

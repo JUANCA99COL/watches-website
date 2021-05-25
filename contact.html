@@ -18,14 +18,14 @@
           <li class="nav-items">
               <a href="index.html">Home</a>
           </li>
-          <li class="nav-items">
+          <!-- <li class="nav-items">
             <a href="shipping.html">Shipping</a>
-          </li>
+          </li> -->
           <li class="nav-items">
               <a href="contact.html">Contact</a>
           </li>
           <li class="nav-items">
-            <a href="my-products.html">Products</a>
+            <a href="store.html">Products</a>
         </li>
           <li>
             <!-- <a href=""><i class="menu" onclick="openNav()">&#9776;</i></a> -->
@@ -37,14 +37,14 @@
           </li>
         </ul>
     </nav>
-  
+
     <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html">Home</a>
-      <a href="my-products.html">Products</a>
-      <a href="shipping.html">Shipping</a>
-      <a href="contact.html">Contact</a>
-    </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="store.html">Products</a>
+        <!-- <a href="shipping.html">Shipping</a> -->
+        <a href="contact.html">Contact</a>
+</div>
 
     <!-- banner image  -->
     <section id="section1">  
@@ -69,6 +69,41 @@
 
     </section>
 
+    <div class="myForm py-5">
+      <h1 class="text-center">LEAVE US A MESSAGE</h1>
+  </div>
+
+  <form id="section-2" class="myForm p-5" method="post" name="myemailform" action="form-to-email.php">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Second Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label">message</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+            Please enter a message in the textarea.
+        </div>
+        </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <a href="mailto:hege@example.com">
+      <button type="submit" class="btn btn-primary" value="Send Form">Submit</button>
+    </a>
+</form>
+
+
     <div class="header">
       <!-- <div class="sides">
         <a href="#" class="logo">BLOG</a>
@@ -84,41 +119,6 @@
       </div>
     </div>
    
-
-    <!-- <div class="myForm py-5">
-        <h1 class="text-center">LEAVE US A MESSAGE</h1>
-    </div>
-
-    <form id="section-2" class="myForm p-5" method="post" name="myemailform" action="form-to-email.php">
-      <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">First Name</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Second Name</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="mb-3">
-          <label for="validationTextarea" class="form-label">message</label>
-          <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-          <div class="invalid-feedback">
-              Please enter a message in the textarea.
-          </div>
-          </div>
-      <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <a href="mailto:hege@example.com">
-        <button type="submit" class="btn btn-primary" value="Send Form">Submit</button>
-      </a>
-  </form> -->
-
 
 
 

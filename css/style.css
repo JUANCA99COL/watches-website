@@ -20,7 +20,7 @@
 
 
 .nav {
-  background: black;
+  background: white;
   /* border: 1px solid blue; */
   height: 150px;
 }
@@ -37,7 +37,7 @@
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .nav a:hover {
@@ -63,7 +63,7 @@
 }
 
 .menu {
-  color: white;
+  color: black;
 }
 
 /* //----------//slideshow//------------// */
@@ -237,7 +237,7 @@
  #myVideo {
   position: fixed;
   right: 0;
-  bottom: -170px;
+  bottom: -179px;
   min-width: 100%;
   min-height: 100%;
 }  
@@ -358,6 +358,11 @@
 
 #first-column p {
  font-size: 25px;
+}
+
+.grid-img {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -503,32 +508,8 @@ span.price {
 
 
 
-
-/* grid images  */
-
-
-.flex4 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* background-color: blue; */
-}
-
-.flex4-child {
-  flex: 0 32%;
-  height: 600px;
-  margin-bottom: 2%;
-  margin-top: 4%;
-  /* background-color: red; */
-}
-
-.grid-img {
-  width: 100%;
-  height: auto;
-}
-
-
 /* media quaries  */
+
 
 @media only screen and (max-width: 1550px) {
 
@@ -540,22 +521,14 @@ span.price {
   #myVideo {
     position: fixed;
     right: 0;
-    bottom: -480px;
+    bottom: -179px;
     min-width: 100%;
     min-height: 100%;
-}
+  }
+
 
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-  .row {
-    flex-direction: column-reverse;
-  }
-  .col-25 {
-    margin-bottom: 20px;
-  }
-}
 
 @media only screen and (max-width: 861px) {
 
@@ -591,18 +564,11 @@ span.price {
   #myVideo {
     position: fixed;
     right: 0;
-    bottom: -380px;
+    bottom: -179px;
     min-width: 100%;
     min-height: 100%;
-}
+  }
 
-.flex4-child {
-  flex: 0 32%;
-  height: 290px;
-  margin-bottom: 2%;
-  margin-top: 4%;
-  background-color: red;
-}
 
 .hero-text {
   text-align: center;
@@ -616,6 +582,8 @@ span.price {
   color: white;
 }
 
+
+
 }
 
 @media only screen and (min-width: 862px) {
@@ -626,6 +594,8 @@ span.price {
 
 
 }
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -675,7 +645,7 @@ a{
     -webkit-transform: translateZ(0); backface-visibility: hidden;
     scale:(1.0, 1.0);
     transform: translateZ(0);
-  background:#1B2030 url(https://images.unsplash.com/photo-1612771409641-b0478cab8b69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) 50% 0 no-repeat;
+  background:gray url(https://images.unsplash.com/photo-1612771409641-b0478cab8b69?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) 50% 0 no-repeat;
   background-size:100%;
   background-attachment:fixed;
   animation: grow 360s  linear 10ms infinite;
@@ -733,9 +703,130 @@ a{
 
 .twtr{
   margin-top:100px
-}.btn.twtr:after{content:"\1F426";padding-left:5px}
+}
+
+.btn.twtr:after{content:"\1F426";padding-left:5px}
 
 
+.details h1 {
+  width: 15%;
+  display: inline-block;
+}
+
+.details button {
+  width: 30%;
+  display: inline-block;
+}
+
+.font-button {
+  font-size: 20px;
+  float: right;
+  margin-top: 17px;
+}
+
+/* cart style  */
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #EB5757;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
 
 
 
