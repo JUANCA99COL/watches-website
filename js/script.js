@@ -57,6 +57,8 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 
-// cart
+// animation text
+
+
 
 

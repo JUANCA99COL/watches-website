@@ -843,6 +843,20 @@ a{
 }
 
 
+.text-div  {
+  background-color: black;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  opacity: 70%;
+}
+
+@keyframes example {
+  0%   {background-color:black; left:-1000px; top:0px;}
+  25%  {background-color:y black; left:10px; top:0px;}
+  
+}
+
 
 
 
